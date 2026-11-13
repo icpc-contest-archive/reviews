@@ -1,0 +1,38 @@
+name: Review
+description: Send a review that you made on the ICPC contest archive site
+title: "Review"
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public, and your GitHub name will be shown on the archive site beside what you contribute. Please leave out private information.
+  - type: textarea
+    id: review
+    attributes:
+      label: Paste your review here
+      description: The archive site fills this box in. If it is empty, press "Copy review" on the site, click in this box and paste. Please do not edit it.
+      placeholder: Paste here
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your connection to these contests
+      options:
+        - Regional contest director
+        - Organiser
+        - Judge
+        - Coach
+        - Contestant
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Drag the files your review names into this box, and only files you may share in public. Leave it empty if there are none.
+    validations:
+      required: false

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Start a review on the archive site
+    url: https://icpc-contest-archive.github.io/contests/?review=1
+    about: Reviews are made on the site and sent from there. Open the site in review mode, mark what is right, wrong or missing, then press Submit review.
